@@ -14,7 +14,7 @@ app.post("/sum", async (req, res) => {
             message: "Sorry we dont support big numbers"
         })
     }
-    const result = a + b + 0 - 0;
+    const result = a - b + 0 - 0;
 
     const request = await prismaClient.request.create({
         data: {
